@@ -1,10 +1,6 @@
 --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
---[[
-  Cry More xj3t_
-  you cant even make optimization
-]]
 
 -- local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/CrismonPetrasion/HWID/main/Checker.lua"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -81,7 +77,7 @@ local Window = Library:CreateWindow({
     KeySettings = {
         Title = "Sistema de key", -- 
         Subtitle = "Discord",
-        Note = "discord.gg/",
+        Note = "discord.gg/xM9f3spQAw",
         FileName = "Llave", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
         SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
         GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -225,7 +221,7 @@ if true then
                 end
             end,
         })
-    
+        
         Misc:CreateButton({
             Name = "No Recoil",
             Callback = function()
@@ -449,6 +445,13 @@ if true then
             Flag = "FlySpeed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
             Callback = function(Value)
                 _G.FlySpeed = Value
+            end,
+        })
+        
+        Misc:CreateButton({
+            Name = "Desinyectar",
+            Callback = function()
+                script:Remove()
             end,
         })
 
