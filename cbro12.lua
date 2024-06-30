@@ -89,11 +89,11 @@ local Window = Library:CreateWindow({
     }
 })
 
-local Home = Window:CreateTab("Home", 4483362458) -- Title, Image
-local Combat = Window:CreateTab("Combat", 4483362458) -- Title, Image
+local Home = Window:CreateTab("Inicio", 4483362458) -- Title, Image
+local Combat = Window:CreateTab("Combate", 4483362458) -- Title, Image
 local Misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
-local Visuals = Window:CreateTab("Visuals", 4483362458) -- Title, Image
-local World = Window:CreateTab("World", 4483362458) -- Title, Image
+local Visuals = Window:CreateTab("Visuales", 4483362458) -- Title, Image
+local World = Window:CreateTab("Mundo", 4483362458) -- Title, Image
 
 --// Version
 
@@ -125,8 +125,8 @@ if true then
     do
         --// Home
 
-        Inicio:CreateLabel("Valen Version")
-        Inicio:CreateLabel("Version: ".. Version)
+        Home:CreateLabel("Valen Version")
+        Home:CreateLabel("Version: ".. Version)
     end
 
     do
