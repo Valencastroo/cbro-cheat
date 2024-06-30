@@ -1,6 +1,10 @@
 --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
+--[[
+  Cry More xj3t_
+  you cant even make optimization
+]]
 
 -- local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/CrismonPetrasion/HWID/main/Checker.lua"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -77,7 +81,7 @@ local Window = Library:CreateWindow({
     KeySettings = {
         Title = "Sistema de key", -- 
         Subtitle = "Discord",
-        Note = "discord.gg/xM9f3spQAw",
+        Note = "discord.gg/",
         FileName = "Llave", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
         SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
         GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -124,11 +128,11 @@ if true then
         --// Creditos
 
         Creditos:CreateLabel("Creado por Cuky2008")
-        Creditos:CreateLabel("Aguante el paco")
+        Creditos:CreateLabel("aguante el paco")
 
         --// Home
 
-        Home:CreateLabel("Cuky2008 Version")
+        Home:CreateLabel("Valen Version")
         Home:CreateLabel("Version: ".. Version)
     end
 
@@ -221,7 +225,7 @@ if true then
                 end
             end,
         })
-        
+    
         Misc:CreateButton({
             Name = "No Recoil",
             Callback = function()
@@ -447,7 +451,7 @@ if true then
                 _G.FlySpeed = Value
             end,
         })
-        
+
         Misc:CreateSection("Cositas")
         Misc:CreateButton({
             Name = "Plata infinita",
