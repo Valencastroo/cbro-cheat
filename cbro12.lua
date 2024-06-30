@@ -447,14 +447,6 @@ if true then
                 _G.FlySpeed = Value
             end,
         })
-        
-        Misc:CreateButton({
-            Name = "Desinyectar",
-            Callback = function()
-                script:Remove()
-		return			
-            end,
-        })
 
         Misc:CreateSection("Cositas")
         Misc:CreateButton({
