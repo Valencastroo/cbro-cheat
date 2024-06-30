@@ -452,6 +452,7 @@ if true then
             Name = "Desinyectar",
             Callback = function()
                 script:Remove()
+		return			
             end,
         })
 
