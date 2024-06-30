@@ -125,8 +125,8 @@ if true then
     do
         --// Home
 
-        Home:CreateLabel("Valen Version")
-        Home:CreateLabel("Version: ".. Version)
+        Inicio:CreateLabel("Valen Version")
+        Inicio:CreateLabel("Version: ".. Version)
     end
 
     do
