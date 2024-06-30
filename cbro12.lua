@@ -447,7 +447,7 @@ if true then
                 _G.FlySpeed = Value
             end,
         })
-
+        
         Misc:CreateSection("Cositas")
         Misc:CreateButton({
             Name = "Plata infinita",
