@@ -11,7 +11,9 @@ local SpeedMultiplier = 5
 local AimbotEnabled = true
 local FOVRadius = 100
 local Smoothness = 0.05
- 
+-- Right click detector
+local RightMouseDown = false
+
 -- ESP Configuration
 local ESPEnabled = true
 local ESP_COLOR = Color3.new(0, 1, 0) -- Green color
@@ -55,7 +57,20 @@ local function getNearestTarget()
  
     return closestPlayer
 end
- 
+
+-- Detect Right Mouse Button Input
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if input.UserInputType == Enum.UserInputType.MouseButton2 then
+        RightMouseDown = true
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(input, gameProcessed)
+    if input.UserInputType == Enum.UserInputType.MouseButton2 then
+        RightMouseDown = false
+    end
+end)
+
 -- Aimbot Logic
 RunService.RenderStepped:Connect(function()
     if not AimbotEnabled then return end
